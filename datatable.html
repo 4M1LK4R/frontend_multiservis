@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#C62828">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="plugins/fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="plugins/datatable/css/jquery.dataTables.min.css">
+    <link rel="shortcut icon" href="images/MULTISERVIS.ico">
+    <title>| MULTISERVIS</title>
+</head>
+
+<body onload="CrearDataTable()">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="red darken-3">
+                <a href="#!" data-activates="menuLateral" class="button-collapse top-nav full hide-on-large-only white-text waves-effect"><i class="icon-menu"></i></a>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">&nbsp;<span class="icon-home-1"></span>MultiServis</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a id="AbriMenu"><i class="icon-menu"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="menuLateral" class="side-nav red-text text-darken-3 red darken-3">
+            <li class="logo white">
+                <div class="row">
+                    <div class="col s6">
+                        <h2><img src="images/multiservis.png" class="responsive-img"></h2>
+                    </div>
+                    <div class="col s6">
+                        <h2 class="btn-block waves-effect waves-light white red-text text-darken-3" onclick="CerrarSideNav();"><i class="icon-cancel-1"></i></h2>
+                    </div>
+                </div>
+            </li>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header" onclick="Inicio();"><i class="icon-home"></i>Inicio</div>
+                </li>
+            </ul>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-sliders"></i>Opciones</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="datatable.html">Data Table 1</a></li>
+                            <li><a class="red-text text-darken-3" href="#!">Opcion 2</a></li>
+                            <li><a class="red-text text-darken-3" href="#!">Opcion 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-user-1"></i>Cuenta</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="login.html">Iniciar Secion</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <br><br><br><br>
+            <h3 class="header center grey-text text-darken-3">MULTI<span class="red-text text-darken-3">SERVIS</span></h3>
+            <br><br><br><br>
+
+
+            <div class="amk">
+                <table id='data' class='table display highlight'>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Costo</th>
+                            <th>Estado</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Servicio A</td>
+                            <td>Tipo 1</td>
+                            <td>$4.76</td>
+                            <td>Activo</td>
+                            <td>
+                                <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
+                                <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Servicio B</td>
+                            <td>Tipo 2</td>
+                            <td>$5.76</td>
+                            <td>Activo</td>
+                            <td>
+                                <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
+                                <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Servicio C</td>
+                            <td>Tipo 2</td>
+                            <td>$1.76</td>
+                            <td>Inactivo</td>
+                            <td>
+                                <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
+                                <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+    <!-- JS -->
+    <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/init.js"></script>
+    <script type="text/javascript" src="plugins/js/main.js"></script>
+    <script type="text/javascript" src="plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="plugins/datatable/js/init.datable.js"></script>
+</body>
+
+<script>
+
+</script>
+
+</html>

@@ -86,6 +86,9 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Tipo</th>
+                            <th>Cliente</th>
+                            <th>Servicios</th>
+                            <th>Costo</th>
                             <th>Estado</th>
                             <th>Opciones</th>
                         </tr>
@@ -95,6 +98,9 @@
                         <tr>
                             <td>Item A</td>
                             <td>Tipo 1</td>
+                            <td>Cliente A</td>
+                            <td>Servicio 1,Servicio 2</td>
+                            <td>800 Bs</td>
                             <td>Activo</td>
                             <td>
                                 <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
@@ -104,6 +110,9 @@
                         <tr>
                             <td>Item B</td>
                             <td>Tipo 2</td>
+                            <td>Cliente B</td>
+                            <td>Servicio 1,Servicio 2,Servicio 3</td>
+                            <td>1200 Bs</td>
                             <td>Activo</td>
                             <td>
                                 <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
@@ -113,6 +122,9 @@
                         <tr>
                             <td>Item C</td>
                             <td>Tipo 2</td>
+                            <td>Cliente A</td>
+                            <td>Servicio 1</td>
+                            <td>80 Bs</td>
                             <td>Inactivo</td>
                             <td>
                                 <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
@@ -129,37 +141,64 @@
             <i class="large icon-plus"></i>
         </a>
     </div>
-    <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
     <div id="modalDatos" class="modal modal-fixed-footer">
         <div class="modal-content">
             <center>
                 <div id="cabeceraModal">
                 </div>
                 <div class="row">
-                    <div class="input-field col s12 m12 l12">
-                        <i class="icon-right-dir prefix"></i>
-                        <input id="cantidad" type="text">
-                        <label for="cantidad">Nombre:</label>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                            <div class="input-field col s12">
-                                <p><i class="icon-right-dir"></i>Tipo:</p>
-                                <div id="campoHorario">
-                                    <div class="input-field col s12">
-                                        <select>
+                    <div class="col s12 m12 l12">
+                        <div class="input-field col s12">
+                            <p><i class="icon-right-dir"></i>Tipo:</p>
+                            <div id="campoHorario">
+                                <div class="input-field col s12">
+                                    <select>
                                             <option value="" disabled selected>(Seleccionar)</option>
                                             <option value="1">Option 1</option>
                                             <option value="2">Option 2</option>
                                             <option value="3">Option 3</option>
                                         </select>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                Escriba el C.I. del Cliente
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="icon-search prefix"></i>
+                                <input type="text" id="autocomplete-input" class="autocomplete">
+                                <label for="autocomplete-input">Buscar Cliente</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="input-field col s12">
+                            <p><i class="icon-right-dir"></i>Servicios:</p>
+                            <div id="campoHorario">
+                                <div class="input-field col s12">
+                                    <select multiple>
+                                            <option value="" disabled selected>(Seleccionar)</option>
+                                            <option value="1">Servicio 1</option>
+                                            <option value="2">Servicio 2</option>
+                                            <option value="3">Servicio 3</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <p class="flow-text light-blue-text text-darken-4"> Costo: 12</p>
+                    </div>
+                </div>
+
                 <p><i class="icon-right-dir"></i>Estado:</p>
                 <div class="row">
                     <div class="col s6 m6 l6">

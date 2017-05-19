@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#C62828">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="plugins/fontello/css/fontello.css">
+    <link rel="shortcut icon" href="images/MULTISERVIS.ico">
+    <title>| MULTISERVIS</title>
+</head>
+
+<body class="blue-grey darken-4">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="red darken-3">
+                <a href="#!" data-activates="menuLateral" class="button-collapse top-nav full hide-on-large-only white-text waves-effect"><i class="icon-menu"></i></a>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">&nbsp;<span class="icon-home-1"></span>MultiServis</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a id="AbriMenu"><i class="icon-menu"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="menuLateral" class="side-nav red-text text-darken-3 red darken-3">
+            <li class="logo white">
+                <div class="row">
+                    <div class="col s6">
+                        <h2><img src="images/multiservis.png" class="responsive-img"></h2>
+                    </div>
+                    <div class="col s6">
+                        <h2 class="btn-block waves-effect waves-light white red-text text-darken-3" onclick="CerrarSideNav();"><i class="icon-cancel-1"></i></h2>
+                    </div>
+                </div>
+            </li>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header" onclick="Inicio();"><i class="icon-home"></i>Inicio</div>
+                </li>
+            </ul>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-sliders"></i>Menu Cliente</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="reservar-servicio.html">Reservar Servicio</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-sliders"></i>Menu Usuarios</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="adm-personal.html">Administrar Personal</a></li>
+                            <li><a class="red-text text-darken-3" href="adm-tecnicos.html">Administrar Tecnicos</a></li>
+                            <li><a class="red-text text-darken-3" href="adm-clientes.html">Administrar Clientes</a></li>
+                            <hr>
+                            <li><a class="red-text text-darken-3" href="adm-alamacenes.html">Administrar Almacenes</a></li>
+                            <li><a class="red-text text-darken-3" href="adm-servicios.html">Administrar Servicios</a></li>
+                            <li><a class="red-text text-darken-3" href="adm-reservas.html">Administrar Reservas</a></li>
+                            <hr>
+                            <li><a class="red-text text-darken-3" href="adm-ficha-tecnica.html">Administracion de Ficha Tecnica</a></li>
+                            <li><a class="red-text text-darken-3" href="asig-personal-reserva.html">Asignacion de Personal a Reserva</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-user-1"></i>Cuenta</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="login.html">Iniciar Secion</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <br><br><br><br>
+            <h3 class="header center grey-text text-darken-3">MULTI<span class="red-text text-darken-3">SERVIS</span></h3>
+            <br><br>
+            <center>
+                <h4 class="white-text">SELECCIONA EL SERVICIO(S) QUE NECESITAS</h4>
+            </center>
+            <br><br><br>
+            <div class="row">
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card1">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/tool-box.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Plomería<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Plomería<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test1" />
+                                    <label for="test1">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test2" />
+                                    <label for="test2">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test3" />
+                                    <label for="test3">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/trowel.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Albañelería<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Albañelería<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test4" />
+                                    <label for="test4">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test6" />
+                                    <label for="test6">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card3">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/shears.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Jardinería<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Jardinería<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test7" />
+                                    <label for="test7">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test8" />
+                                    <label for="test8">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test9" />
+                                    <label for="test9">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/rule.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Gasfitería<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Gasfitería<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test10" />
+                                    <label for="test10">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test11" />
+                                    <label for="test11">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test12" />
+                                    <label for="test12">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card5">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/saw.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Capintería<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Capintería<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test13" />
+                                    <label for="test13">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test14" />
+                                    <label for="test14">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test15" />
+                                    <label for="test15">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="card z-depth-3" id="card6">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/tools/pliers-1.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Electricista<i class="icon-ellipsis-vert right"></i></span>
+                            <p><a href="#">¿En qué consite este servicio?</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Detallar Servicio Electricista<i class="icon-cancel-1 right"></i></span>
+                            <form action="#">
+                                <p>
+                                    <input type="checkbox" id="test16" />
+                                    <label for="test16">Inslacion Basica</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test17" />
+                                    <label for="test17">Mantenimiento</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="test18" />
+                                    <label for="test18">Reparacion</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l12 m12 s12">
+                    <center>
+                        <a class="waves-effect waves-light btn-large red darken-3"><i class="icon-check-1 left"></i>CONFIRMAR RESERVA</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- JS -->
+    <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/init.js"></script>
+    <script type="text/javascript" src="plugins/js/main.js"></script>
+
+    <script>
+                                                             var flag1 = true;
+                                                             $('#card1').click(function () {
+                                                                 if (flag1) {
+                                                                     $('#card1').addClass('red darken-3');
+                                                                     flag1 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card1').removeClass('red darken-3');
+                                                                     flag1 = true;
+                                                                 }
+                                                             });
+
+                                                             var flag2 = true;
+                                                             $('#card2').click(function () {
+                                                                 if (flag2) {
+                                                                     $('#card2').addClass('red darken-3');
+                                                                     flag2 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card2').removeClass('red darken-3');
+                                                                     flag2 = true;
+                                                                 }
+                                                             });
+
+                                                             var flag3 = true;
+                                                             $('#card3').click(function () {
+                                                                 if (flag3) {
+                                                                     $('#card3').addClass('red darken-3');
+                                                                     flag3 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card3').removeClass('red darken-3');
+                                                                     flag3 = true;
+                                                                 }
+                                                             });
+
+                                                             var flag4 = true;
+                                                             $('#card4').click(function () {
+                                                                 if (flag4) {
+                                                                     $('#card4').addClass('red darken-3');
+                                                                     flag4 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card4').removeClass('red darken-3');
+                                                                     flag4 = true;
+                                                                 }
+                                                             });
+
+                                                             var flag5 = true;
+                                                             $('#card5').click(function () {
+                                                                 if (flag5) {
+                                                                     $('#card5').addClass('red darken-3');
+                                                                     flag5 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card5').removeClass('red darken-3');
+                                                                     flag4 = true;
+                                                                 }
+                                                             });
+
+                                                             var flag6 = true;
+                                                             $('#card6').click(function () {
+                                                                 if (flag6) {
+                                                                     $('#card6').addClass('red darken-3');
+                                                                     flag6 = false;
+                                                                 }
+                                                                 else {
+                                                                     $('#card6').removeClass('red darken-3');
+                                                                     flag6 = true;
+                                                                 }
+                                                             });
+    </script>
+</body>
+
+</html>

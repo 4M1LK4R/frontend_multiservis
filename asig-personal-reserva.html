@@ -45,7 +45,19 @@
             </ul>
             <ul class="collapsible white-text" data-collapsible="accordion">
                 <li>
-                    <div class="collapsible-header"><i class="icon-sliders"></i>Administrar Sistema</div>
+                    <div class="collapsible-header"><i class="icon-sliders"></i>Menu Cliente</div>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="red-text text-darken-3" href="reservar-servicio.html">Reservar Servicio</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="collapsible white-text" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-sliders"></i>Menu Usuarios</div>
                     <div class="collapsible-body">
                         <ul>
                             <li><a class="red-text text-darken-3" href="adm-personal.html">Administrar Personal</a></li>
@@ -79,41 +91,27 @@
             <br><br><br><br>
             <h3 class="header center grey-text text-darken-3">MULTI<span class="red-text text-darken-3">SERVIS</span></h3>
             <br><br>
-
+            <h2 class="center">Asignar reserva a personal</h2>
             <div class="amk">
-                <table id='data' class='table display highlight'>
+                <table id='data' class='table display highlight centered'>
                     <thead>
                         <tr>
                             <th>Nombre</th>
                             <th>Tipo</th>
                             <th>Estado</th>
+                            <th>Asignar Personal</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td>Item A</td>
+                            <td>Reserva A</td>
                             <td>Tipo 1</td>
                             <td>Activo</td>
                             <td>
-                                <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
-                                <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
+                                <a class='waves-effect waves-light btn btn-floating orange' href="#modalDatos"><i class='icon-export'></i></a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>Item B</td>
-                            <td>Tipo 2</td>
-                            <td>Activo</td>
-                            <td>
-                                <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
-                                <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Item C</td>
-                            <td>Tipo 2</td>
-                            <td>Inactivo</td>
                             <td>
                                 <a class='waves-effect waves-light btn btn-floating blue'><i class='icon-pencil-1'></i></a>
                                 <a class='waves-effect waves-light btn btn-floating red'><i class='icon-trash'></i></a>
@@ -123,18 +121,43 @@
                 </table>
             </div>
     </main>
-
+    <!--
     <div class="fixed-action-btn horizontal">
         <a class="btn-floating btn-large green " href="#modalDatos">
             <i class="large icon-plus"></i>
         </a>
     </div>
-    
+    -->
+
     <div id="modalDatos" class="modal modal-fixed-footer">
         <div class="modal-content">
             <center>
                 <div id="cabeceraModal">
+                    <p class="flow-text center"><b>Asiganar Personal</b></p>
                 </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="icon-search-1 prefix"></i>
+                                <input type="text" id="autocomplete-input" class="autocomplete">
+                                <label for="autocomplete-input">Buscar personal por codigo</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class=""><b>Nombre Empleado:</b> Javier Rojas</p>
+                        <p class=""><b>Codigo:</b> 101010</p>
+                        <p class=""><b>Especialidades:</b> Plomeria,Electricidad</p>
+                        <p class=""><b>Calificación:</b><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half-alt"></i><i class="icon-star-empty"></i></p>
+                    </div>
+                </div>
+
+
+                <!--
                 <div class="row">
                     <div class="input-field col s12 m12 l12">
                         <i class="icon-right-dir prefix"></i>
@@ -171,6 +194,7 @@
                         <label for="vhiNo">Inactivo</label>
                     </div>
                 </div>
+                -->
             </center>
         </div>
         <div class="modal-footer blue-grey darken-4">
